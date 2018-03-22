@@ -1,87 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- saved from url=(0052)https://getbootstrap.com/docs/4.0/examples/carousel/ -->
+<html lang="pt-br"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" href="_img/logoTop.png">
 
-    <title>Simple Sidebar - Start Bootstrap Template</title>
+    <title>InfoRio</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="_libs/bootstrap.min.css" rel="stylesheet">
+    <link href="./Carousel Template for Bootstrap_files/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
+    <link href="./Carousel Template for Bootstrap_files/carousel.css" rel="stylesheet">
     <link href="_css/style.css" rel="stylesheet">
-
-    <link rel="shortcut icon" href="_css/_img/WorldMonuments-09-512.png">
-    
-    <!-- Bootstrap itself -->
-
-    <!-- Fonts -->
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-
 </head>
 
-<body class="theme-invert">
-  
-<nav class="mainmenu">
-    <div class="container">
-        <div class="dropdown">
-            <button type="button" class="navbar-toggle" data-toggle="dropdown"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-            <!-- <a data-toggle="dropdown" href="#">Dropdown trigger</a> -->
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                <li><a href="#head" class="active">Menu Principal</a></li>
-                <li><a class="dropdown-item" href="#about">Hospitais</a></li>
-                <li><a class="dropdown-item" href="#themes">Delegacias</a></li>
-                <li><a class="dropdown-item" href="#contact">Pontos Turisticos</a></li>
-                <li><a class="dropdown-item" href="#praias">Praias</a></li>
-                <li><a class="dropdown-item" href="#contact">Onde comer</a></li>
-                <li><a class="dropdown-item" href="#contact">Onde dormir</a></li>
-                <li><a class="dropdown-item" href="#contact">Eventos</a></li>
-                <li><a class="dropdown-item" href="#contact">Banheiros</a></li>
-            </ul>
+<body cz-shortcut-listen="true">
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="_img/logoTop.png" width="50" height="30" alt="">
+              </a>
+            <a class="navbar-brand" href="#">InfoRio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="servicosP.html">Serviços Publicos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="lazer.html">Lazer</a>
+                    </li>
+                    <ul class="nav navbar-nav navbar-right loginT">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Login <span class="caret"></span></a>
+                        <ul id="login-dp" class="dropdown-menu">
+                            <li>
+                                <div class="row">
+                                <div class="col-md-12">
+                                    Login via
+                                    <div class="social-buttons">
+                                        <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i>Facebook</a>
+                                        <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i>Twitter</a>
+                                    </div>
+                                    ou
+                                    <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                        <div class="form-group">
+                                            <label class="sr-only" for="exempleInputEmail2">Endereço de email</label>
+                                            <input type="email" class="form-control" id="exempleInputEmail2" placeholder="Email" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="exampleInputPassword2">Senha</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Senha" required>
+                                            <div class="help-block text-right"><a href="">Esqueceu a senha ?</a></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                            <input type="checkbox"> Me mantenha logado
+                                            </label>
+                                        </div>
+                                    </form>
+                                    </div>
+                                    <div class="buttom text-center">
+                                        Novo aqui ? <a href="cadastrar.html"><b>Cadastre-se</b></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                        </ul>
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main">
+        <div class="jumbotron">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img class="first-slide" src="_img/indexPhoto.jpg" alt="First slide">
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <h1>InfoRio</h1>
+                            <p>O seu site de informações da cidade maravilhosa.</p>
+                            <p><a class="btn btn-lg btn-primary" href="cadastrar.html" role="button">Cadastrar</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="third-slide" src="_img/restaurantes.jpg" alt="Second slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Restaurantes</h1>
+                            <p>Aqui você encontra os melhores restaurantes mais próximos de você!</p>
+                            <p><a class="btn btn-lg btn-primary" href="https://getbootstrap.com/docs/4.0/examples/carousel/#" role="button">Restaurantes</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img class="first-slide" src="_img/delegacia.jpg" alt="Third slide">
+                    <div class="container">
+                        <div class="carousel-caption text-right">
+                            <h1>Segurança</h1>
+                            <p>Basta um clique que você localiza as delegacias mais próximas de você !</p>
+                            <p><a class="btn btn-lg btn-primary" href="https://getbootstrap.com/docs/4.0/examples/carousel/#" role="button">Segurança</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</nav>
-    
-    <section class="section" id="head">
-    <div class="container">
-
-        <div class="row">
-            <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">   
-
-                <!-- Site Title, your name, HELLO msg, etc. -->
-                <h1 class="title">InfoRio</h1>
-                <h2 class="subtitle">O seu site de informações</h2>
-
-                <!-- Short introductory (optional) -->
-                
-                <!-- Nice place to describe your site in a sentence or two -->
-                <p><a href="/download/" class="btn btn-default btn-lg">Download template now</a></p>
-    
-            </div> <!-- /col -->
-        </div> <!-- /row -->
-    
-    </div>
-</section>
 
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="_libs/jquery.min.js"></script>
-    <script src="_libs/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="_js/app.js"></script>
-    <!-- Menu Toggle Script -->
+        <!-- Marketing messaging and featurettes
+      ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container marketing">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <img class="rounded-circle" src="_img/eventos.jpg" alt="Generic placeholder image" width="140" height="140">
+                    <h2>Eventos</h2>
+                    <p>O seu site de informações sobre a cidade maravilhosa.</p>
+                    <p><a class="btn btn-secondary" href="https://getbootstrap.com/docs/4.0/examples/carousel/#" role="button">View details »</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="rounded-circle" src="_img/hospital.jpg" alt="Generic placeholder image" width="140" height="140">
+                    <h2>Hospitais</h2>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                    <p><a class="btn btn-secondary" href="https://getbootstrap.com/docs/4.0/examples/carousel/#" role="button">View details »</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="rounded-circle" src="_img/praia.jpg" alt="Generic placeholder image" width="140" height="140">
+                    <h2>Praias</h2>
+                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <p><a class="btn btn-secondary" href="https://getbootstrap.com/docs/4.0/examples/carousel/#" role="button">View details »</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <hr class="my-4">
+        </div>
+        <!-- FOOTER -->
+        <footer class="container">
+            <p>© 2018-2018 Cruz, Thiago. · <a href="#">Sobre</a> · <a href="#">Terms</a></p>
+            </footer>
+        </div>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./Carousel Template for Bootstrap_files/jquery-3.2.1.slim.min.js.transferir" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
+        window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')
     </script>
+    <script src="./Carousel Template for Bootstrap_files/popper.min.js.transferir"></script>
+    <script src="./Carousel Template for Bootstrap_files/bootstrap.min.js.transferir"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="./Carousel Template for Bootstrap_files/holder.min.js.transferir"></script>
 
-</body>
 
-</html>
+    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="25" style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif">500x500</text></svg></body></html>
